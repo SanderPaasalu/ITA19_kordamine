@@ -71,8 +71,14 @@ def otsing1(otsing):
                     print(laul2.album)
                     print(laul2.laulja)
                     print(laul2.aasta)
+    elif otsing == "4":         # Väljastab kõik albumid koos sisuga
+        print("Albumid on:")
+        for album in albumid:
+            album.nlauljaJnimi()
+            album.nlaulud()
+            print("-----------------------------")
     else:
-        print("Valige number 1-3!")
+        print("Valige number 1-4!")
 
 
 while program:
@@ -80,5 +86,6 @@ while program:
     print("1. Artist")
     print("2. Album või aasta")
     print("3. Laul")
-    uin = input("> ")
+    print("4. Kõik albumid")
+    uin = input("--> ")
     otsing1(uin)

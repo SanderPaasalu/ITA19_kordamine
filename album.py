@@ -6,3 +6,12 @@ class Album:
         self.laulja = laulja
         self.aasta = aasta
         self.laulud = []
+
+
+    def nlauljaJnimi(self):
+        print(self.laulja + ": " + self.pealkiri + " (" + self.aasta + ")")
+
+
+    def nlaulud(self):
+        for laul in self.laulud:
+            laul.naita_pealkiri()
